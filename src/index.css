@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000f0;
+  color: rgb(255, 0, 166);
+}
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 16px;
+  background-color: #b50356;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+button:disabled {
+  background-color: #000000;
+  cursor: not-allowed;
+  box-shadow: 0px 0px 5px 2px #ffffff5c;
+  
+}
+
+button:hover:enabled {
+  background-color: #ffffff;
+  color:  #920446;
+  box-shadow: 0px 0px 10px 2px #b5036b;
+}
+
+textarea {
+  display: block;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 500px;
+  height: 150px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  resize: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 2px #bbb9ba;
+  font-weight: 500;
+  color: #000000;
+
+}
+
+/* Saved Texts Section */
+.saved-texts {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+  background-color: #fff;
+  border: 1px solid #151515;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgb(255, 255, 255);
+}
+
+.saved-texts h2 {
+  text-align: center;
+  color: #cecbcb;
+}
+
+.saved-texts .saved-text {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  position: relative;
+}
+
+.saved-text:last-child {
+  border-bottom: none;
+}
+
+.saved-text p {
+  margin: 0;
+  color: #333;
+}
+
+.saved-text .timestamp {
+  font-size: 0.8em;
+  color: #3c3b3b;
+  margin-top: 5px;
+}
+
+.saved-text select {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  font-size: 14px;
+  background-color: #000000;
+}
+select{
+  color: #000000;
+}
+
+option{
+  background-color: #b5077b;
+  color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  button {
+      font-size: 14px;
+      padding: 8px 15px;
+  }
+
+  textarea {
+      font-size: 14px;
+      height: 120px;
+  }
+
+  .saved-texts {
+      width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+      font-size: 1.5em;
+  }
+
+  button {
+      font-size: 12px;
+      padding: 5px 10px;
+  }
+
+  textarea {
+      font-size: 12px;
+      height: 100px;
+  }
+
+  .saved-text .timestamp {
+      font-size: 0.7em;
+  }
+
+}
