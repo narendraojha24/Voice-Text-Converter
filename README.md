@@ -31,6 +31,7 @@ A React.js project that uses the **Web Speech API** for real-time voice-to-text 
 ---
 
 ## 📷 Screenshots
+---
 
 ![Screenshot 2024-12-25 195407](https://github.com/user-attachments/assets/4b10753a-5509-44d5-99cc-bed075186ff6)
 
